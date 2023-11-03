@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiChoice Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="top-display">   
+      <div class="high-score"><a href="#" id="show-scores">View Highscore</a></div>
+      <div class="timer">Time: <span id="time">0</span></div>
+  </div>
+
+
+  <div class="wrapper">
+
+    <div id="start-screen" class="start">
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+         Try to answer the following code-related questions within the time limit.
+        keep in mind that incorrect answers will penalize your scoretime by ten seconds!.
+      </p>
+      <button id="quizstart">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen">
+      
+    </div>
+
+    <div id="end-screen" class="hide">
+      <h2>You’re Done.</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit" onclick="saveScore()">Submit</button>
+      </p>
+    </div>
+    
+    <div id="score-screen" class="score-screen hide">
+      <h2>High Scores</h2>
+      <div id="score-table" class="score-table">
+
+      </div>
+      <div class="btn-group">
+        <button id="reset" onclick="resetScores()">Reset Scores</button>
+        <button id="quizstart">Take Quiz</button>
+      </div>
+    </div>
+
+    <div id="answer" class="status hide">
+      <label></label>
+    </div>
+
+ 
+  </div>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
